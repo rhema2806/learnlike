@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌸🌷Todo List Pro🌷🌸</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bubbles">
+    <span style="--i:11;"></span>
+    <span style="--i:12;"></span>
+    <span style="--i:24;"></span>
+    <span style="--i:18;"></span>
+    <span style="--i:20;"></span>
+    <span style="--i:14;"></span>
+    <span style="--i:16;"></span>
+    <span style="--i:22;"></span>
+    <span style="--i:19;"></span>
+    <span style="--i:17;"></span>
+</div>
+
+<div class="main-container">
+    <div class="container">
+        <h1>🌸🌷Todo List Pro🌷🌸</h1>
+        <div class="xp-bar">
+            Total XP: <span id="xpCount">0</span> XP
+        </div>
+
+        <div class="top-bar">
+            <input type="text" id="taskInput" placeholder="Enter a task...">
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <div class="controls">
+            <button onclick="filterTasks('all')">All</button>
+            <button onclick="filterTasks('active')">Active</button>
+            <button onclick="filterTasks('completed')">Completed</button>
+            <input type="text" id="searchInput" placeholder="Search..." oninput="searchTasks()">
+            <button onclick="toggleTheme()">🌙</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <div class="calendar-container">
+        <h2>Streak Calendar 📅</h2>
+        <div id="calendar"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
